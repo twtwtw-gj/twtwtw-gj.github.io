@@ -3,7 +3,39 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
+  <script>
+
+window.dataLayer = window.dataLayer || [];
+
+
+dataLayer.push({
+
+  event: "select_promotion",
+  ecommerce: {
+    items: [
+     {
+       item_name: "HAPPY ANALYTICS Tシャツ",       // 商品名
+       item_id: "10003",       // 商品ID
+       price: 1500,       // 値段
+       item_brand: "HAPPY ANALYTICS",       // ブランド名
+       item_category: "Apparel",       // 商品カテゴリ１
+       item_category2: "Mens",       // 商品カテゴリ２
+       item_category3: "Shirts",       // 商品カテゴリ３
+       item_category4: "Tshirts",       // 商品カテゴリ４
+       item_variant: "Gray",       // 商品の色
+       promotion_id: "abc123", //プロモーションID
+       promotion_name: "summer_promo",　//プロモーション名
+       creative_name: "instore_suummer",　//クリエイティブ名
+       creative_slot: "1",　//クリエイティブ番号
+       location_id: "hero_banner",　//掲載位置
+       index: 1,　//掲載順位
+       quantity: 1　　//個数
+     }]
+  }
+});
+
+
+    (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
